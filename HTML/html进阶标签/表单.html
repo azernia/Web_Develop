@@ -9,5 +9,76 @@
 <body>
     <h3>表单</h3>
     <!-- 表单域，表单元素，提示信息 -->
+    <!-- 
+        action: 提交地址
+        method: 提交方式
+            get: 显示提交，可以在浏览器地址栏中看到提交的数据
+                数据以 ？开始并以 & 连接多个数据
+            post: 隐式提交
+        enctype="application/x-www-form-urlencoded" 默认
+        enctype="multipart/form-data" 文件传输时 以二进制方式传递
+        enctype="text/plain"
+     -->
+    <form 
+        action="#"
+        method="post"
+        enctype="multipart/form-data"
+    >
+        <p>
+            用户名：<input type="text" name="username">
+        </p>
+        <p>
+            密&nbsp;&nbsp;&nbsp;码：<input type="password" name="password">
+        </p>
+        <p>
+            <input type="button" value="普通按钮">
+            <input type="submit" value="提交">
+            <input type="reset" value="重置">
+        </p>
+        <p>input 标签</p>
+        <!-- 
+            <input 
+                type="text" 呈现形式
+                name="" 发送数据的名称
+                size="" 输入框的显示长度
+                value="" 初始值
+                maxlength="" 允许输入的最大长度
+                id=""
+            >
+         -->
+         <input type="text" name="" value="测试默认值" size="15" maxlength="10">
+         <p>单选标签</p>
+         <p>
+             性别：<input type="radio" name="gender" value="male" checked="checked"> 男
+             <input type="radio" name="gender" value="female"> 女
+         </p>
+         <p>多选 复选框</p>
+         <p>
+             爱好：
+             <input type="checkbox" name="love" value="movie"> 电影
+             <input type="checkbox" name="love" value="game"> 游戏
+             <input type="checkbox" name="love" value="sleep"> 睡觉
+         </p>
+         <p>下拉框</p>
+         <p>
+             省份
+             <select name="provinces">
+                <option value="">--未选择--</option>
+                <option value="sichuan">四川</option>
+                <option value="hunan">湖南</option>
+                <option value="beijing">北京</option>
+                <option value="shanghai">上海</option>
+             </select>
+         </p>
+         <p>文件选择</p>
+         <p>
+             <!-- 有文件需要发送时 form 的 method 必须为 post -->
+             <input type="file" name="fileName" id="">
+         </p>
+         <p>颜色选择</p>
+         <p>
+             颜色选择<input type="color" name="color">
+         </p>
+    </form>
 </body>
 </html>
