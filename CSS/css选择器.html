@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 标签选择器 当前网页内的所有标签适用 */
+        table {
+            width: 300px;
+            height: 200px;
+            border: solid 1px;
+            background-color: red;
+            color: white;
+        }
+        /* id 选择器 给该 ID 添加样式 */
+        #t1 {
+            background-color: blue;
+        }
+        /* 类选择器 */
+        .common {
+            color: red;
+        }
+        /* 全部选择 选择所有 HTML 标签 */
+        * {
+
+        }
+        /* 组合选择器 多种选择器以 , 分隔 */
+        /* 子标签选择器 */
+        ul li a {
+            color: black;
+        }
+        #p1 a {
+            color: green;
+        }
+        /* 属性选择器 标签名[属性名=标签名] */
+        input[type=text] {
+            background-color: red;
+        }
+    </style>
+    <title>CSS 选择器</title>
+</head>
+<body>
+    <h3>CSS 选择器</h3>
+    <hr/>
+    <hr/>
+    <table id="t1" class="common">
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <b class="common">css 学习</b>
+    <hr/>
+    <ul id="u">
+        <li><a href="">123</a></li>
+        <li><a href="">123</a></li>
+        <li><a href="">123</a></li>
+    </ul>
+    <p id="p1">
+        <a href="">321</a>
+    </p>
+    <p>
+        <a href="">321</a>
+    </p>
+    <a href="">321</a>
+    <br/>
+    <input type="text" name="" id="">
+    <input type="password" name="" id="">
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 声明学习</title>
+    <!-- 使用 link 标签引入 CSS 相当于调用 -->
+    <!-- 声明 CSS h4需要写type h5 不需要-->
+    <style type="text/css"> 
+    /* 
+        公共样式声明区 作用域根据选择器选择的标签 
+        一般卸载 head 中
+        事实上可以写在任意位置，写在 head 中方便阅读
+        写在 head 中就近原则
+    */
+        hr {
+            width: 50%;
+            height: 20px;
+            color: red;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS 声明学习</h3>
+    <!-- 在标签上声明 将样式直接作用于该标签 该样式最后执行 -->
+    <hr style="background-color: blue;"/>
+    <hr/>
+</body>
+</html>
